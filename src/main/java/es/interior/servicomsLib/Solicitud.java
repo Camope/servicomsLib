@@ -1,10 +1,10 @@
 package es.interior.servicomsLib;
 
-import java.util.Date;
+import java.time.OffsetDateTime;
 
 public interface Solicitud {
 
-	public Date getFechaSolicitud();
+	public OffsetDateTime getFechaSolicitud();
 
 	public Comision getComision();
 

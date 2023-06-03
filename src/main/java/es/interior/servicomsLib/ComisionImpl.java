@@ -1,6 +1,6 @@
 package es.interior.servicomsLib;
 
-import java.util.Date;
+import java.time.OffsetDateTime;
 import java.util.List;
 
 public class ComisionImpl implements Comision {
@@ -8,8 +8,8 @@ public class ComisionImpl implements Comision {
 	private String localidad;
 	private String especialidad;
 	private String empleo;
-	private Date fechaPublicacion;
-	private Date fechaLimite;
+	private OffsetDateTime fechaPublicacion;
+	private OffsetDateTime fechaLimite;
 	private Integer duracion;
 	private String detalles;
 	private List<Solicitud> solicitudes;
@@ -46,19 +46,19 @@ public class ComisionImpl implements Comision {
 		this.empleo = empleo;
 	}
 
-	public Date getFechaPublicacion() {
+	public OffsetDateTime getFechaPublicacion() {
 		return fechaPublicacion;
 	}
 
-	public void setFechaPublicacion(Date fechaPublicacion) {
+	public void setFechaPublicacion(OffsetDateTime fechaPublicacion) {
 		this.fechaPublicacion = fechaPublicacion;
 	}
 
-	public Date getFechaLimite() {
+	public OffsetDateTime getFechaLimite() {
 		return fechaLimite;
 	}
 
-	public void setFechaLimite(Date fechaLimite) {
+	public void setFechaLimite(OffsetDateTime fechaLimite) {
 		this.fechaLimite = fechaLimite;
 	}
 

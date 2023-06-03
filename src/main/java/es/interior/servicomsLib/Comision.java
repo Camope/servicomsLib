@@ -1,6 +1,6 @@
 package es.interior.servicomsLib;
 
-import java.util.Date;
+import java.time.OffsetDateTime;
 import java.util.List;
 
 public interface Comision {
@@ -13,9 +13,9 @@ public interface Comision {
 
 	public String getEmpleo();
 
-	public Date getFechaPublicacion();
+	public OffsetDateTime getFechaPublicacion();
 
-	public Date getFechaLimite();
+	public OffsetDateTime getFechaLimite();
 
 	public Integer getDuracion();
 

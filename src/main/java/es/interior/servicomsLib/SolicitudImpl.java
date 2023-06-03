@@ -1,18 +1,18 @@
 package es.interior.servicomsLib;
 
-import java.util.Date;
+import java.time.OffsetDateTime;
 
 public class SolicitudImpl implements Solicitud {
 	
-	private Date fechaSolicitud;
+	private OffsetDateTime fechaSolicitud;
 	private Comision comision;
 	private Usuario usuario;
 
-	public Date getFechaSolicitud() {
+	public OffsetDateTime getFechaSolicitud() {
 		return fechaSolicitud;
 	}
 
-	public void setFechaSolicitud(Date fechaSolicitud) {
+	public void setFechaSolicitud(OffsetDateTime fechaSolicitud) {
 		this.fechaSolicitud = fechaSolicitud;
 	}
 
